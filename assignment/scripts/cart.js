@@ -67,6 +67,10 @@ console.log(isFull(basket));
 
 console.log(basket);
 
+addItem('last item');
+
+console.log(basket);
+
 // DO NOT MODIFY
 // Used for automated testing
 try {
