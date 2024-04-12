@@ -31,6 +31,14 @@ function listItems(array) {
 listItems(basket);
 
 
+function empty (basket){
+    basket.length = 0;
+    return basket;
+}
+
+empty(basket);
+
+console.log(basket);
 
 
 
