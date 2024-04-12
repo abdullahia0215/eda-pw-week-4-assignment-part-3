@@ -3,17 +3,32 @@ console.log("***** Cart Functions *****");
 // We want to see how you are testing your code!!!
 
 let basket = [];
+let maxItems = 5;
+
+console.log(maxItems);
 
 console.log(basket);
 
+// function addItem(item) {
+//   if (item) {
+//     basket.push(item);
+//     return true;
+//   } else {
+//     return false;
+//   }
+// };
+
 function addItem(item) {
-  if (item) {
-    basket.push(item);
-    return true;
-  } else {
-    return false;
+    if (isFull()) {
+      return false; 
+    }
+    if (item) {
+      basket.push(item);
+      return true; 
+    } else {
+      return false; 
+    }
   }
-};
 
 console.log("should return false ", addItem());
 
@@ -39,9 +54,7 @@ empty(basket);
 
 console.log(basket);
 
-let maxItems = 5;
 
-console.log(maxItems);
 
 function isFull() {
   if (basket.length >= maxItems) {
@@ -55,6 +68,8 @@ function isFull() {
 console.log(isFull(basket));
 
 console.log(basket);
+
+
 
 // DO NOT MODIFY
 // Used for automated testing
