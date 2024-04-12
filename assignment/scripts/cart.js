@@ -45,6 +45,15 @@ let maxItems = 5;
 
 console.log(maxItems);
 
+function isFull() {
+    return basket.length >= maxItems;
+  }
+  
+
+
+
+  console.log(basket);
+
 
 
 
