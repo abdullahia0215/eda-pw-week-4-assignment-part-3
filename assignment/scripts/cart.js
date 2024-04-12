@@ -13,7 +13,7 @@ function addItem(item) {
   } else {
     return false;
   }
-}
+};
 
 console.log("should return false ", addItem());
 
@@ -24,13 +24,13 @@ console.log(addItem("Milk"));
 console.log("basket is now ", basket);
 
 function listItems(array) {
-  for (i = 0; i < array.length; i++) {
+  for (let i = 0; i < array.length; i++) {
     console.log(array[i]);
   }
 }
 listItems(basket);
 
-function empty(basket) {
+function empty() {
   basket.length = 0;
   return basket;
 }
@@ -44,24 +44,17 @@ let maxItems = 5;
 console.log(maxItems);
 
 function isFull() {
-  if (basket.length >= maxItems){
+  if (basket.length >= maxItems) {
     return true;
-  } if (basket.length < maxItems){
+  }
+  if (basket.length < maxItems) {
     return false;
   }
-};
-
+}
 
 console.log(isFull(basket));
 
 console.log(basket);
-
-
-
-
-
-
-
 
 // DO NOT MODIFY
 // Used for automated testing
