@@ -7,13 +7,29 @@ let basket = [];
 console.log(basket);
 
 function addItem(item){
-    basket.push(item);
-    if (basket.length > 0){
-        return true;
-    }
-}
+ if (item) {
+    basket.push(item)
+    return true;
+ } else {
+    return false;
+ }
+};
 
-console.log(addItem('kale'));
+console.log('should return false ', addItem());
+
+console.log(addItem('Cheese'));
+console.log(addItem('Eggs'));
+console.log(addItem('Milk'));
+
+console.log('basket is now ', basket);
+
+function listItems(array) {
+  for (i = 0; i < array.length; i++) {
+    console.log(array[i]);
+  }
+}
+listItems(basket);
+
 
 
 
