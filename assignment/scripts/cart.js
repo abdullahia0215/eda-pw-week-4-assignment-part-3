@@ -41,6 +41,10 @@ empty(basket);
 console.log(basket);
 
 
+let maxItems = 5;
+
+console.log(maxItems);
+
 
 
 
